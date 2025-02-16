@@ -24,7 +24,7 @@ label{
     display: flex;
     height: 100vh;
     /* Set the height of the div to full viewport height or adjust as necessary */
-    background-image: url('/Users/bhavu/~uOttawa/SEG3125/Project 1/Final Part/Background.jpg');
+    background-image: url('Background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
