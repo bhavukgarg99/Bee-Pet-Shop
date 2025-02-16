@@ -1,0 +1,414 @@
+p {
+    color: white;
+    /* White text for paragraph */
+    font-family: 'Montserrat', sans-serif;
+    /* Font family for paragraph text */
+    font-size: 18px;
+    /* Font size */
+    text-align: left;
+    /* Center the text */
+}
+label{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    text-align: left;
+}
+
+/* Add some spacing for tabbed content */
+.tab-content {
+    margin-top: 20px;
+}
+
+.main-content {
+    display: flex;
+    height: 100vh;
+    /* Set the height of the div to full viewport height or adjust as necessary */
+    background-image: url('/Users/bhavu/~uOttawa/SEG3125/Project 1/Final Part/Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.main-content::before {
+    content: '';
+    position: absolute;
+    height: 100vh;
+    top: 104px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Black overlay with 50% opacity */
+    z-index: 0;
+}
+
+
+.main-content2 {
+    height: 100vh;
+    /* Set the height of the div to full viewport height or adjust as necessary */
+    background-image: url('/Users/bhavu/~uOttawa/SEG3125/Project 1/Final Part /Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.main-content2::before {
+    content: '';
+    position: absolute;
+    height: 100vh;
+    top: 96.5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Black overlay with 50% opacity */
+
+    z-index: 0;
+}
+.contact-info {
+    color: #BCBABA;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    font-size: 14px;
+}
+.contact-info img {
+    height: 30px;
+    width: auto;
+    vertical-align: middle;
+}
+.contact-info a {
+    font-family: 'Montserrat', sans-serif;
+    color: #BCBABA;
+
+}
+
+.navbar-custom {
+    background: linear-gradient(to right,#2DDB72, #0066FF);
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    /* Bold text */
+    color: white;
+    float: left;
+    padding-left: 5%;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.nav-links a {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    /* Montserrat font */
+    font-weight: 600;
+    /* Bold text */
+    position: relative;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: all 0.2s;
+    padding-left: 20px;
+}
+.nav-links a.active {
+    color: #1753A7; /* Blue color for active state */
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+    text-decoration-color: #1753A7;
+}
+
+.nav-links a:hover {
+    color: #1753A7;
+    text-decoration: underline;
+    /* Add underline on hover */
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+    text-decoration-color: #1753A7;
+    transition: all 0.2s;
+
+}
+.tab-pane {
+    display: none; /* Hide all tab content by default */
+    width: 100%; /* Ensure each section fills the container */
+    position: relative; /* Stack positioning context */
+    top: 0;
+    left: 0;
+}
+
+.tab-pane.active {
+    display: block; /* Only the active tab should be displayed */
+}
+
+
+.button-simple {
+    color: white !important;
+    /* Sets the text color */
+    text-decoration: none !important;
+    /* Removes the underline from the link */
+    padding: 8px 18px;
+    /* Provides internal space around the text */
+    text-align: center;
+    background-color: #1753A7;
+    /* Sets the button's background color */
+    border-radius: 20px;
+    /* Rounds the corners of the button */
+    transition: all 0.2s;
+}
+
+.button-simple:hover {
+
+    background-color: #5397f5;
+    /* Changes the background color on hover */
+    border: solid;
+    transition: all 0.2s;
+
+}
+
+.footer {
+    background-color: #1E1E1E;
+    /* Dark background for the footer */
+    color: white;
+    /* White text color */
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    /* Consistent font family */
+    width: 100%;
+    position: relative;
+    height: fit-content;
+    text-align: left;
+}
+
+.footer h5 {
+    color: #2DDB72;
+    /* White color for headings */
+    font-weight: 600;
+    /* Bold text */
+
+    padding-bottom: 10px;
+    /* Spacing under headings */
+}
+
+.footer p,
+.footer a {
+    color: #ccc;
+    /* Lighter text color for content and links */
+    font-size: 15px;
+    text-decoration: none;
+    /* No underline on links */
+    text-align: left;
+    padding-right: 10px;
+}
+
+.footer ul {
+    list-style-type: none;
+    /* No bullets for list */
+    padding: 0;
+    /* No padding */
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    /* Underline links on hover */
+    color: #fff;
+    /* Change color on hover */
+}
+
+
+.copyright-footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #141414;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    height: fit-content;
+    bottom: 0;
+}
+
+.service-category {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    color: white; /* White text color */
+
+    align-items: center;
+    text-align: center;
+}
+
+.service-category h3 {
+
+    border-radius: 5px;
+    margin-top: 0;
+}
+
+.service-category ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    text-align: left;
+}
+
+.service-category li {
+    padding: 5px 0; /* Space between items */
+}
+
+.service-category li:last-child {
+    border-bottom: none; /* No border on the last item */
+}
+
+.specialist-card {
+    display: flex;
+    flex-direction: column; /* Stacks the image and text vertically */
+    align-items: center; /* Aligns children (image and text) in the center */
+    width: 100%; /* Ensures the card stretches to fill the column */
+    height: auto; /* Auto height to accommodate content */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.specialist-card img {
+    width: 100%; /* Image will fill the width of the card */
+    height: 300px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures images cover the area well, cropping as necessary */
+    transition: transform 0.5s ease;
+}
+
+.specialist-card:hover img {
+    transform: scale(1.1); /* Slight zoom on hover for effect */
+}
+
+
+.specialist-info {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+}
+
+.specialist-info h3 {
+    margin-top: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.specialist-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
+    color: white;
+    padding: 20px;
+    width: 100%; /* Overlay covers the entire width */
+    text-align: center; /* Centers text within the overlay */
+}
+
+@media (min-width: 992px) {
+    .col-md-4 {
+        max-width: 33.33%; /* Three columns on large screens */
+    }
+    .specialist-card img {
+        height: 500px; /* Maintains the same height on larger screens */
+    }
+}
+.row.justify-content-center {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    justify-content: center; /* Centers cards horizontally */
+    align-items: stretch; /* Aligns cards to have the same height */
+}
+
+.col-md-4 {
+    display: flex;
+    padding: 15px; /* Provides spacing around each card */
+    flex: 1 0 300px; /* Each card will try to stay above 300px width but can grow */
+    justify-content: center; /* Centers the content within each column */
+    align-items: center; /* Centers content vertically */
+}
+
+.location-content {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 0; /* Adjust padding as needed */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Improve text readability */
+}
+
+.location-address, .location-hours {
+    font-size: 22px; /* Smaller font size for details */
+    text-align: center;
+    margin-bottom: 10px; /* Space between text lines */
+}
+
+.contact-info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info-section h2 {
+    margin-bottom: 20px;
+    font-size: 2em; /* Adjust size as needed */
+}
+
+.social-card {
+    background-color: #EBEBEB;
+    height:220px;
+    width: 250px; /* Adjust width as necessary */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    display: flex; /* Aligns children (social-card) in a row */
+    justify-content: center; /* Centers the social cards horizontally */
+    gap: 20px; 
+}
+.col-md-6 {
+    display: flex;
+    padding: 15px; /* Provides spacing around each card */
+    flex: 1 0 300px; /* Each card will try to stay above 300px width but can grow */
+    justify-content: center; /* Centers the content within each column */
+    align-items: center; /* Centers content vertically */
+}
+.social-card a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.social-card img {
+    margin-bottom: 10px;
+}
+
+.social-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
